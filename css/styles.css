@@ -1,0 +1,36 @@
+.page-body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+.starwars-box {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    perspective: 300px;
+    color: gold;
+    font-family: arial, Verdana, sans-serif;
+    font-size: 5em;
+    /*font-weight: 600;*/
+    /*line-height: 150%;*/
+}
+.move-box {
+    position: relative;
+    transform-origin: 50% 100%;
+    animation: move-box 30s ease-in infinite;
+}
+@keyframes move-box {
+    0% {
+        top: 350px;
+        transform: rotateX(35deg) translateZ(0);
+    }
+    100% {
+        top: -5500px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+.titles {
+    text-transform: uppercase;
+    text-align: center;
+}
