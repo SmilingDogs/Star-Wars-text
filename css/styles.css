@@ -18,7 +18,7 @@
 .move-box {
     position: relative;
     transform-origin: 50% 100%;
-    animation: move-box 30s ease-in infinite;
+    animation: move-box 30s ease-in-out infinite;
 }
 @keyframes move-box {
     0% {
